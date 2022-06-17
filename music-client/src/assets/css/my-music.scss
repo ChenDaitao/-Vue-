@@ -1,0 +1,115 @@
+@import "var.scss";
+
+.my-music{
+ box-sizing: border-box;
+  width: 70%;
+  margin: 20px auto;
+  margin-bottom: 40px;
+  border: 20px solid transparent;
+  border-width: 20px 10px 3px 100px;
+  border-image-source: url('~@/assets/img/5.png');
+  border-image-slice: 12 10 3 70;
+  .album-slide{
+    display: flex;
+    margin-bottom: 20px;
+    // justify-content: space-between;
+    
+  }
+  .all{
+    color: rgb(175, 143, 55);
+    margin: 120px 0 0 70px;
+    .album-title{
+      margin-bottom: 30px;
+      font-weight: 700;
+      font-size: 20px;
+    }
+    .album-info li{
+      float: left;
+      margin-right: 28px;
+    }
+  }
+  .album-img{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #fff;
+    img{
+      width: 100%;
+    }
+  }
+  // .songs-body{
+  //   background-color: rgb(239, 232, 225)!important;
+  // }
+}
+// .my-music {
+//   width: 70%;
+//   margin: 0 auto;
+//   margin-top: $header-height;
+//   padding-top: 150px;
+//   background-color: rgb(239, 232, 225);
+//   margin-bottom: 40px;
+//   // background-color: red;
+
+//   // &::before {
+//   //   /*背景*/
+//   //   content: "";
+//   //   // background-color: $theme-color;
+//   //   background-color: aliceblue;
+//   //   position: absolute;
+//   //   top: 0;
+//   //   width: 100%;
+//   //   height: $header-height + 150px;
+//   // }
+// }
+
+// /*左侧*/
+// .album-slide {
+//   // float: left;
+//   width: 400px;
+//   // 图片
+//   .album-img {
+//     height: 200px;
+//     width: 200px;
+//     display: inline-block;
+//     position: relative;
+//     top: -100px;
+//     left: 120px;
+//     overflow: hidden;
+//     border: 5px solid $color-white;
+//     img {
+//       width: 100%;
+//     }
+//   }
+//   /*信息*/
+//   .album-info {
+//     display: flex;
+//     justify-content: space-around;
+//     color: $color-black;
+//     background-color: aqua;
+//     width: 500px;
+//     // font-size: 20px;
+//     // font-weight: 500;
+//     // margin-top: -100px;
+//     // margin-left: 100px;
+//     // padding: 30px 30px;
+//     li {
+//       // width: 100%;
+//       line-height: 40px;
+//     }
+//   }
+// }
+//  .album-title {
+//     margin-top: -90px;
+//     font-size: 24px;
+//     font-weight: 700;
+//   }
+// /*歌单内容*/
+// .album-content {
+//   padding: 120px 350px;
+//   margin: 100px 100px 0 100px;
+//   // background-color: aliceblue;
+//   /*歌单题目*/
+//   .songs-body {
+//     margin-top: 50px;
+//     margin-bottom: 80px;
+//   }
+// }

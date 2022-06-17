@@ -1,0 +1,119 @@
+@import "var.scss";
+@import "global.scss";
+.setting{
+  box-sizing: border-box;
+  margin: 70px auto;
+  margin-bottom: 40px;
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.897);
+  border: 20px solid transparent;
+  border-width: 20px 10px 3px 100px;
+  border-image-source: url('~@/assets/img/3.png');
+  border-image-slice: 12 10 3 70;
+  // x偏移 y偏移  模糊半径  扩散半径
+  box-shadow: 2px 2px 5px 2px rgba(192, 171, 171, 0.377);
+  .settingsMainHeader{
+    font-size: 24px;
+    font-weight: 700;
+    padding: 60px 0px 15px 100px;
+    
+  }
+  .setting-aside{
+    box-sizing: border-box;
+    width: 70%;
+    border-top: 4px solid rgb(202, 67, 67);
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-left: 100px;
+    
+    li{
+      box-sizing: border-box;
+      float: left;
+      cursor: pointer;
+      width:100px;
+      background-color: rgb(247, 247, 247);
+      box-shadow: 2px 2px 2px 0 rgba(142, 135, 135, 0.568);
+
+      &:hover {
+              background-color:$theme-color;
+              color: white;
+            }
+            // &:active {
+            //   // background-color: pink;
+            // }
+    }
+  }
+}
+.activeColor {
+  background-color: $color-blue-shallow !important;
+  color: $color-white;
+}
+.contentCol {
+  box-sizing: border-box;
+  width: 70%;
+  // background-color: aqua;
+  background-size: cover;
+  margin: 0 0 70px 100px;
+  padding-right: 400px;
+}
+// .setting {
+//   margin: 30px auto;
+//   margin-top: $header-height;
+//   min-height: 65vh;
+//   width: 70%;
+//   @include layout;
+//   // background-color: $color-white;
+//   background-color: aquamarine;
+//   border-radius: 0 0 12px 12px ;
+// }
+
+// /* 左侧导航栏 */
+// .leftCol {
+//   margin-top: 10px;
+//   // padding: 0 40px;
+//   box-sizing: border-box;
+//   width: 200px;
+//   text-align: center;
+
+//   .settingsMainHeader {
+//     height: 60px;
+//     line-height: 60px;
+//     font-size: 22px;
+//     font-weight: 500;
+//   }
+// }
+
+// .setting-aside {
+//   width: 100%;
+//   li {
+//     display: block;
+//     height: 40px;
+//     line-height: 40px;
+//     font-size: 18px;
+//     padding: 0 10px;
+//     box-sizing: border-box;
+//     border-radius: 5px;
+//     margin-right: 2px;
+//     cursor: pointer;
+
+//     &:hover {
+//       background-color: $color-blue-active;
+//       color: $color-white;
+//     }
+//     &:active {
+//       background-color: $color-blue-shallow;
+//     }
+//   }
+// }
+
+// .activeColor {
+//   background-color: $color-blue-shallow !important;
+//   color: $color-white;
+// }
+
+// /* 右边内容 */
+// .contentCol {
+//   flex: 1;
+//   padding-top: 20px;
+// }

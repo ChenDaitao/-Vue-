@@ -1,0 +1,18 @@
+@import "var.scss";
+@import "global.scss";
+
+.the-footer {
+  margin: 0 auto;
+  width: 70%;
+  height: $footer-height;
+  background-color: $theme-footer-color;
+  border-top: 2px solid #aaa;
+ p{
+   padding: 0!important;
+   margin: 50px auto;
+   text-align: center;
+   font-size: 20px;
+   font-family: "宋体";
+   font-weight: 700;
+ }
+}

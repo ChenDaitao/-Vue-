@@ -1,0 +1,12 @@
+@import "var.scss";
+@import "global.scss";
+
+.upload {
+  width: 70%;
+  .section {
+    box-sizing: border-box;
+    height: 400px;
+    // @include layout(center, center);
+    padding: 50px 0 0px 40px;
+  }
+}

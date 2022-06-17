@@ -1,0 +1,178 @@
+@import "var.scss";
+@import "global.scss";
+
+.the-header {
+  position: relative;
+  // @include layout;
+  display: flex;
+  width: 100%;
+  height: $header-height+15px;
+  line-height: $header-height+15px;
+  padding: $header-padding;
+  margin: $header-margin;
+  // background-color: $theme-header-color;
+  background-color: rgb(192, 152, 91);
+  @include box-shadow($box-shadow);
+  box-sizing: border-box;
+  z-index: 100;
+  font-weight: 700;
+}
+
+.header-logo {
+
+  // margin: $header-logo-margin;
+  box-sizing: border-box;
+  padding: 0 6px;
+  font-size: $font-size-logo;
+  font-weight: 700;
+  // font-family: "楷体";
+  color: rgb(65, 22, 0);
+  // box-shadow: 1px 1px 5px 3px rgba(235, 225, 225, 0.495);
+  white-space: nowrap;
+  margin-left: -10px;
+  margin-top: 5px;
+  border-radius: 20px;
+  color: aliceblue;
+  // width: 170px;
+  // text-indent: 0px;
+  cursor: pointer;
+
+  .icon {
+    @include icon(($header-height / 3) * 2);
+    vertical-align: baseline;
+    margin-right: -10px;
+    color: aliceblue;
+  }
+}
+
+/*nav*/
+.navbar {
+  // height: $header-height;
+  margin-left: 20px;
+  white-space: nowrap;
+
+  li {
+    margin: $header-nav-margin;
+    padding: $header-nav-padding;
+    font-size: $font-size-header;
+    // color: $color-grey;
+    color: rgb(240, 232, 211);
+    text-align: center;
+    border-bottom: none;
+    box-sizing: border-box;
+    // background-color: aqua;
+    cursor: pointer;
+  }
+}
+
+/*搜索*/
+.header-search {
+  @include layout;
+  border-radius: $header-search-radius+20px;
+  margin-left: 400px;
+  overflow: hidden;
+  box-shadow: 2px 2px 4px 3px rgba(210, 206, 206, 0.363);
+
+  input {
+    height: $header-search-height;
+    // width: $header-search-width+10px;
+    width: 220px;
+    font-size: $font-size-default;
+    border: 0;
+    text-indent: 15px;
+    background-color: $color-light-grey;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .search-btn {
+    @include layout(center, center);
+    padding-left: 20px;
+    // background-color: $color-blue-active;
+    // width: $header-search-btn-width;
+    height: $header-search-btn-height;
+    background-color: $color-light-grey;
+    cursor: pointer;
+
+    .icon {
+      @include icon(1em, $color-black);
+    }
+  }
+}
+
+/*用户*/
+.header-right {
+  position: relative;
+  @include layout(center, center);
+
+  #user {
+    overflow: hidden;
+    width: $header-user-width;
+    height: $header-user-height;
+    border-radius: $header-user-radius;
+    margin: $header-user-margin;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.menu {
+  display: none;
+  line-height: 0px;
+  position: absolute;
+  background-color: $color-white;
+  @include box-shadow(1px 1px 10px rgba(0, 0, 0, 0.4));
+  width: $header-menu-width;
+  padding: $header-menu-padding;
+  border-radius: $header-menu-radius;
+  top: $header-height + 10px;
+  right: -20px;
+  z-index: 5;
+  text-align: center;
+  cursor: pointer;
+
+  li {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+
+    &:hover {
+      background-color: $theme-color;
+      color: $color-white;
+    }
+  }
+
+  :nth-child(1):before {
+    content: " ";
+    display: block;
+    /*独占一行*/
+    position: absolute;
+    right: 45px;
+    top: -5px;
+    /*果断的露出上半部分*/
+    width: 10px;
+    height: 10px;
+    background-color: $color-white;
+    /*一个正方形倾斜四十五度就是三角了但是要把下半部分藏起来*/
+    transform: rotate(45deg);
+  }
+
+  // :nth-child(1):hover:before {
+  // background-color: $theme-color;
+  // }
+}
+
+.show {
+  display: block;
+}
+
+.active {
+  color: $theme-color  !important;
+  border-bottom: 5px solid $theme-color  !important;
+}

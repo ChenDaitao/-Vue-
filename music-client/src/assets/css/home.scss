@@ -1,0 +1,29 @@
+@import "var.scss";
+
+.home {
+  margin-top: $header-height - 10px;
+  .section {
+    width: 70%;
+    margin: 0 auto;  
+    margin-top: 20px;
+    padding: $content-padding;
+    padding-bottom: 20px;
+    background-color: #f2e6dc;
+    border: 20px solid transparent;
+    border-width: 20px 10px 3px 100px;
+    border-image-source: url('~@/assets/img/5.png');
+    border-image-slice: 12 10 3 70;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    .section-title {
+      height: 60px;
+      line-height: 60px;
+      padding-top: 20px;
+      font-size: 28px;
+      font-weight: 500;
+      text-align: center;
+      color: $color-black;
+      box-sizing: border-box;
+    }
+  }
+}
